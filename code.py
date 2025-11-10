@@ -5,6 +5,8 @@
 import threading
 import time
 import os
+import pandas 
+import scilearn
 
 # variables globales
 log = ""  # buffer en mémoire
