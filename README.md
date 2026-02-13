@@ -2,6 +2,7 @@ Projet à vocation scolaire : il s'agit de réaliser une infrastructure vulnéra
 
 La structure de l'infra mise en place doit ressembler à celle suivante : 
 
+```
 CLIENT (Keylogger)
     ↓
     Envoie les touches à PORT 5000
@@ -15,3 +16,5 @@ DASHBOARD 8000 (Interface Web)
     ├─ Consulte le serveur 5000
     ├─ Affiche les données
     └─ Interface pour voir les logs
+
+```
