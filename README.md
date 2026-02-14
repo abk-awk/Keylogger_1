@@ -31,3 +31,19 @@ DASHBOARD 8000 (Interface Web)
    └─→ Démarre le thread d'envoi
    └─→ Écoute le clavier en continu
 ```
+Architecture finale
+```
+
+PORT 5000 (web.py)
+  ├─ Reçoit POST /api/logs du keylogger
+  ├─ Stocke les données
+  └─ Sert GET pour dashboard et controller
+
+PORT 8000 (dashboard.py)
+  ├─ Interface web joliment formatée
+  └─ Consulte le port 5000
+
+Console (controller.py)
+  ├─ Menu interactif
+  └─ Consulte le port 5000
+```
