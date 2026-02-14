@@ -33,16 +33,17 @@ C. Installatin & configuration
 
 pip3 install flask requests
 ```
-# 2. Lancer l'API Backend (port 5000)
+# 2. Lancer l'API Backend pour la réception des données 
+
 ```
 python3 web.py
 ```
-# 3. Lancer le Dashboard Web (port 8000)
+# 3. Lancer le Dashboard 
 ```
 python3 dashboard.py
 ```
 
-# 4. (Optionnel) Lancer le Contrôleur
+# 4. Lancer le Contrôleur pour l
 ```
 python3 controller.py --server http://192.168.30.129:5000
 
