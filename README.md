@@ -28,31 +28,39 @@ C. Installatin & configuration
 
 - Sur l'hôte de l'attaquant :
 
-```
 # 1. Installer les dépendances
+```
+
 pip3 install flask requests
-
+```
 # 2. Lancer l'API Backend (port 5000)
+```
 python3 web.py
-
+```
 # 3. Lancer le Dashboard Web (port 8000)
+```
 python3 dashboard.py
+```
 
 # 4. (Optionnel) Lancer le Contrôleur
+```
 python3 controller.py --server http://192.168.30.129:5000
 
 ```
 - Sur l'hôte victime
 
-```
-# 1. Copier le fichier keylogger
-# v3_keylogger_simple.py
+# 1. Copier le fichier v3_keylogger
 
 # 2. Lancer le keylogger
-python3 v3_keylogger_simple.py
 
 ```
+python3 v3_keylogger_simple.py
+```
 
+D. Fonctionnement du système 
+
+- Sur l'hôte attaquant
+  
 ```
 CLIENT (Keylogger)
     ↓
@@ -69,6 +77,8 @@ DASHBOARD 8000 (Interface Web)
     └─ Interface pour voir les logs
 
 ```
+- Sur l'hôte victime 
+
 ```
 1. CAPTURE (on_press)
    └─→ Chaque touche → log_queue
@@ -82,19 +92,4 @@ DASHBOARD 8000 (Interface Web)
    └─→ Démarre le thread d'envoi
    └─→ Écoute le clavier en continu
 ```
-Architecture finale
-```
 
-PORT 5000 (web.py)
-  ├─ Reçoit POST /api/logs du keylogger
-  ├─ Stocke les données
-  └─ Sert GET pour dashboard et controller
-
-PORT 8000 (dashboard.py)
-  ├─ Interface web joliment formatée
-  └─ Consulte le port 5000
-
-Console (controller.py)
-  ├─ Menu interactif
-  └─ Consulte le port 5000
-```
