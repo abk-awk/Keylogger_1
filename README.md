@@ -18,3 +18,16 @@ DASHBOARD 8000 (Interface Web)
     └─ Interface pour voir les logs
 
 ```
+```
+1. CAPTURE (on_press)
+   └─→ Chaque touche → log_queue
+
+2. ENVOI (sender)
+   └─→ Attend 10 touches (BATCH_SIZE)
+   └─→ Les envoie au serveur
+   └─→ Boucle infinie
+
+3. MAIN
+   └─→ Démarre le thread d'envoi
+   └─→ Écoute le clavier en continu
+```
