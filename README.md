@@ -1,5 +1,6 @@
 A. Description
-Projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
+L'objectif est de passer d'un simple script de capture de frappes à une simulation cybersécurité plus réaliste, composée de plusieurs éléments interconnectés. 
+Ceci constitue un projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
 Ce projet capture les frappes clavier sur une machine victime et les envoie à un serveur distant pour analyse. Il illustre comment un attaquant peut :
 
 - Capturer les données sensibles (mots de passe, textes, etc.)
