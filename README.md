@@ -1,6 +1,23 @@
+
+
+B. Structure du projet 
+```
+keylogger_project/
+├── README.md                    # Cette documentation
+│
+├── SERVEUR DISTANT (192.168.30.129)
+│   ├── web.py                   # API Backend (port 5000)
+│   ├── dashboard.py             # Interface Web (port 8000)
+│   └── controller.py            # Contrôleur Console (optionnel)
+│
+└── MACHINE VICTIME
+    └── v3_keylogger_simple.py   # Keylogger Client
+```
+
 Projet à vocation scolaire : il s'agit de réaliser une infrastructure vulnérable et accéssible au travers de notre réseau informatique.
 
 La structure de l'infra mise en place doit ressembler à celle suivante : 
+
 
 ```
 CLIENT (Keylogger)
