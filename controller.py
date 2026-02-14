@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 CONTRÔLEUR - Interface ligne de commande
-Consulte l'API du port 5000
+Consulte l'API du port 5000 #
 Lance avec: python3 controller.py --server http://192.168.30.129:5000
 """
 
