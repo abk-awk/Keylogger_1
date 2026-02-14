@@ -1,4 +1,5 @@
 A. Description
+
 L'objectif est de passer d'un simple script de capture de frappes à une simulation cybersécurité plus réaliste, composée de plusieurs éléments interconnectés. 
 Ceci constitue un projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
 Ce projet capture les frappes clavier sur une machine victime et les envoie à un serveur distant pour analyse. Il illustre comment un attaquant peut :
@@ -14,7 +15,7 @@ B. Structure du projet
 keylogger_project/
 ├── README.md                    # Cette documentation
 │
-├── SERVEUR DISTANT (192.168.30.129)
+├── SERVEUR DISTANT ( IP serveur : X.X.X.X)
 │   ├── web.py                   # API Backend (port 5000)
 │   ├── dashboard.py             # Interface Web (port 8000)
 │   └── controller.py            # Contrôleur Console (optionnel)
@@ -23,9 +24,6 @@ keylogger_project/
     └── v3_keylogger_simple.py   # Keylogger Client
 ```
 
-Projet à vocation scolaire : il s'agit de réaliser une infrastructure vulnérable et accéssible au travers de notre réseau informatique.
-
-La structure de l'infra mise en place doit ressembler à celle suivante : 
 
 
 ```
