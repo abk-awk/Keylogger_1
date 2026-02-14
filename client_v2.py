@@ -1,4 +1,3 @@
-(env) root@ubu:/home/ubu/Documents/keylogger_v2# cat v2_keylogger.py
 #!/usr/bin/env python3
 """
 Keylogger pédagogique - CLIENT
