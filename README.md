@@ -7,8 +7,11 @@ Ceci constitue un projet pédagogique démontrant les risques de sécurité lié
 Ce projet capture les frappes clavier sur une machine victime et les envoie à un serveur distant pour analyse. Il illustre comment un attaquant peut :
 
 - Capturer les données sensibles (mots de passe, textes, etc.)
-- Les transmettre vers un serveur malveillant
+- Les transmettre vers un serveur distant
 - Les consulter à distance via une interface web
+
+<img width="1017" height="462" alt="image" src="https://github.com/user-attachments/assets/f3c2a757-de7e-44bc-ac76-c157ec6e9a0f" />
+
 
 ⚠️ ATTENTION : À utiliser UNIQUEMENT sur vos propres machines pour apprendre !
 
