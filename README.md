@@ -1,4 +1,12 @@
+A. Description
+Projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
+Ce projet capture les frappes clavier sur une machine victime et les envoie à un serveur distant pour analyse. Il illustre comment un attaquant peut :
 
+- Capturer les données sensibles (mots de passe, textes, etc.)
+- Les transmettre vers un serveur malveillant
+- Les consulter à distance via une interface web
+
+⚠️ ATTENTION : À utiliser UNIQUEMENT sur vos propres machines pour apprendre !
 
 B. Structure du projet 
 ```
