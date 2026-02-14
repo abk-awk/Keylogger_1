@@ -1,7 +1,9 @@
 # A. Description
 
 L'objectif est de passer d'un simple script de capture de frappes à une simulation cybersécurité plus réaliste, composée de plusieurs éléments interconnectés. 
+
 Ceci constitue un projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
+
 Ce projet capture les frappes clavier sur une machine victime et les envoie à un serveur distant pour analyse. Il illustre comment un attaquant peut :
 
 - Capturer les données sensibles (mots de passe, textes, etc.)
@@ -87,8 +89,6 @@ DASHBOARD 8000 (Interface Web)
 
 Sur la machine victime, le script python lancé permettra d'enresgitrer les touches tapées pour les envoyées au serveur distant sur son port d'écoute 5000.
 
-
-
 ```
 1. CAPTURE (on_press)
    └─→ Chaque touche → log_queue
@@ -103,3 +103,16 @@ Sur la machine victime, le script python lancé permettra d'enresgitrer les touc
    └─→ Écoute le clavier en continu
 ```
 
+Pour quitter le script, ctrl+c est la combinaison à taper et avoir la fin de l'enregistrement sur le client.
+```
+[!] Arrêt du keylogger (Ctrl+C)...
+[!] 53 touches capturées
+
+[ENVOI] Envoi de 53 touches au serveur...
+[URL] http://192.168.30.129:5000/api/logs
+[RESPONSE] {"received":53,"status":"ok"}
+
+[✓] Envoi réussi !
+[✓] Fichier keylog.json supprimé
+[!] Au revoir!
+```
