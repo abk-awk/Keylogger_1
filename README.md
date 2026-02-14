@@ -24,6 +24,9 @@ keylogger_project/
     └── v3_keylogger_simple.py   # Keylogger Client
 ```
 
+C. Installatin & configuration 
+
+- Sur l'hôte victime
 
 
 ```
