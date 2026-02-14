@@ -51,9 +51,7 @@ python3 controller.py --server http://192.168.30.129:5000
 ```
 - Sur l'hôte victime
 
-# 1. Copier le fichier v3_keylogger
-
-# 2. Lancer le keylogger
+1. Lancer le keylogger
 
 ```
 python3 v3_keylogger_simple.py
@@ -62,11 +60,17 @@ python3 v3_keylogger_simple.py
 D. Fonctionnement du système 
 
 - Sur l'hôte attaquant
+
+Les touches tapées sur le client keylogger seront enregistrées dans un fichier .json et directement envoyées au serveur distant pour un affichage sur le serveur distant.
+
+Une fois le script python lancé, l'envoi l'est aussi. Il est fait vers le port 5000 du serveur distant.
+
+Le serveur distant écoute sur son port 5000 et lance un serveur web flask sur le port 8000 pour un affichage dans le navigateur.
   
 ```
 CLIENT (Keylogger)
     ↓
-    Envoie les touches à PORT 5000
+    Envoie les touches au PORT 5000
     ↓
 SERVEUR 5000 (API Flask)
     ├─ Reçoit les données
@@ -79,7 +83,11 @@ DASHBOARD 8000 (Interface Web)
     └─ Interface pour voir les logs
 
 ```
-- Sur l'hôte victime 
+- Sur l'hôte victime :
+
+Sur la machine victime, le script python lancé permettra d'enresgitrer les touches tapées pour les envoyées au serveur distant sur son port d'écoute 5000.
+
+
 
 ```
 1. CAPTURE (on_press)
