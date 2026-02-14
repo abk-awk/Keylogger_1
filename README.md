@@ -1,4 +1,4 @@
-A. Description
+# A. Description
 
 L'objectif est de passer d'un simple script de capture de frappes à une simulation cybersécurité plus réaliste, composée de plusieurs éléments interconnectés. 
 Ceci constitue un projet pédagogique démontrant les risques de sécurité liés aux keyloggers.
@@ -10,7 +10,7 @@ Ce projet capture les frappes clavier sur une machine victime et les envoie à u
 
 ⚠️ ATTENTION : À utiliser UNIQUEMENT sur vos propres machines pour apprendre !
 
-B. Structure du projet 
+# B. Structure du projet 
 ```
 keylogger_project/
 ├── README.md                    # Cette documentation
@@ -24,26 +24,27 @@ keylogger_project/
     └── v3_keylogger_simple.py   # Keylogger Client
 ```
 
-C. Installatin & configuration 
+# C. Installatin & configuration 
 
 - Sur l'hôte de l'attaquant :
 
-# 1. Installer les dépendances
+1. Installer les dépendances
 ```
 
 pip3 install flask requests
 ```
-# 2. Lancer l'API Backend pour la réception des données 
+2. Lancer l'API Backend pour la réception des données 
 
 ```
 python3 web.py
 ```
-# 3. Lancer le Dashboard 
+3. Lancer le Dashboard 
 ```
 python3 dashboard.py
 ```
 
-# 4. Lancer le Contrôleur pour l
+4. Lancer le Contrôleur pour l'affichage intéractif en CLI
+   
 ```
 python3 controller.py --server http://192.168.30.129:5000
 
