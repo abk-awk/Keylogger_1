@@ -4,7 +4,7 @@ DASHBOARD - Interface Web
 Affiche les victimes et leurs logs
 Consulte l'API sur le port 5000
 Lance avec: python3 dashboard.py
-Port: 8000
+Port: 8000 # à customiser au choix 
 """
 
 from flask import Flask, jsonify, render_template_string
