@@ -1,9 +1,10 @@
+
 import sys
 import termios
 import tty
 from contextlib import contextmanager
 
-LOG_FILE = "terminal_keys.log"
+LOG_FILE = "terminal_keys.log" # fichier log en local avec les entrées capturées
 
 
 @contextmanager
